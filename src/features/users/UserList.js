@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { selectAllUsers } from './usersSlice'
+import { selectAllUsers } from './usersSice'
 import { Link } from 'react-router-dom'
 
 const UsersList = () => {

@@ -10,9 +10,11 @@ import { Provider } from 'react-redux'
 import { fetchUsers } from './features/users/usersSice';
 import { fetchPosts } from './features/posts/postsSlice';
 
+import { extendedApiSlice } from './features/posts/postsSlice'
+
 
 store.dispatch(fetchUsers())
-store.dispatch(fetchPosts())
+store.dispatch(extendedApiSlice.endpoints.getPosts.initiate())
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
